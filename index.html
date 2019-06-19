@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <title>Ryan Huffnagle's Personal Website</title>
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+  <!-- Opening entrance page -->
   <section id="opening">
     <div class="title show">
       <h1>Ryan Huffnagle</h1>
@@ -17,6 +20,8 @@
       <img src="images/down-arrow.svg" class="down-arrow">
     </div>
   </section>
+
+  <!-- Sticky Nav Bar -->
   <nav>
     <h2 class="navtitle">Ryan Huffnagle</h2>
     <a href="#opening">Home</a>
@@ -24,37 +29,113 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Entire Bio section. Contains my description, interests, experience, and programming knowledge -->
   <section id="about">
     <div class="about-div hide">
-      <h1>Get to Know Me</h1>
+
       <img src="images/Ryan.jpeg" alt="Personal Photo" class="me">
-      <h2>Bio</h2>
-      <p class="profile-descrip">I'm a Material Sciences engineer and aspiring web developer. I'm currently working through the 2019 Web Development
-        bootcamp by instructor Angela Yu in order to expand my programming knowledge and change careers.</p>
-      <h2>Interests</h2>
-      <p>Meditation, Kendrick Lamar, Guitar, Hiking, Sustainability, Michael Pollan, Lacrosse, Soccer, Backpacking, Missing Putts for Par, </p>
-      <h2>Experience</h2>
-      <h3>Epic</h3>
-      <p=class="skills-descrip">I've managed various teams across a suite of projects. From software implementations to brand new axle assembly lines!</p>
-      <h3>Detroit Diesel</h3>
-      <p class="eng-descrip">I graduated in April 2017 with a Material Sciences Engineering degree from the University of Michigan. I have extensive experience with manufacturing and failure analysis while working
-        at Detroit Diesel in 2016. I continuosly strive to learn and improve through hands on experience and analytical thinking. </p>
-      <h2>Programming Knowledge.</h2>
-      <table>
-        <tr>
-          <td>Javascript</td>
-          <td>HTML</td>
-        </tr>
-        <tr>
-          <td>SQL</td>
-          <td>CSS</td>
-        </tr>
 
-      </table>
 
+      <div class="bio">
+        <h2>Bio</h2>
+        <p class="profile-descrip">Hi there! I'm a full-stack web developer with a degree in Material Sciences Engineering from the University of Michigan. I aim to combine my strong analytical
+          background during my training as an engineer with my technical software expertise to deliver clean and effective software solutions.
+        </p>
+        <br>
+        <p>Collaboration is the key to success. I pride myself on working extremly effectively on both small and large teams, both in software development and on the production floor.</p>
+      </div>
+
+      <hr>
+
+      <div class="interests">
+        <img src="images/hammock.svg" alt="hammock" class="hammock">
+        <h2>Some of My Interests...</h2>
+        <p>Kendrick Lamar | Guitar | Hiking | Environmentalism | Michael Pollan | Lacrosse | Soccer | Tim Ferris | Meditation | Flight of the Conchords | Popping Bubble Wrap</p>
+      </div>
+
+      <hr>
+
+      <div class="experience">
+        <h2>Experience</h2>
+        <div class="epic-div">
+          <img src="images/heartbeat.svg" alt="heart" class="heart">
+          <h3>Epic Systems</h3>
+          <p=class="skills-descrip">I've managed various teams across a suite of projects. From software implementations to brand new axle assembly lines!</p>
+        </div>
+
+        <div class="det-diesel">
+          <img src="images/assembly.svg" alt="assembly" class="gear">
+          <h3>Detroit Diesel</h3>
+          <p class="eng-descrip">I graduated in April 2017 with a Material Sciences Engineering degree from the University of Michigan. I have extensive experience with manufacturing and failure analysis while working
+            at Detroit Diesel in 2016. I continuosly strive to learn and improve through hands on experience and analytical thinking. </p>
+        </div>
+      </div>
+
+      <div class="programming">
+        <iframe src="https://giphy.com/embed/1ynCEtlgMPAeNAqdnu" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <p><a href="https://giphy.com/stickers/ciscoengemojis-security-1ynCEtlgMPAeNAqdnu">via GIPHY</a></p>
+        <h2>Programming Knowledge.</h2>
+        <table>
+          <tr>
+            <td>
+              <img src="images/javascript.png" alt="javascript">
+              <br>
+              Javascript
+            </td>
+            <td>
+              <img src="images/HTML.png" alt="html">
+              <br>
+              HTML
+            </td>
+            <td>
+              <img src="images/css.png" alt="css">
+              <br>
+              CSS
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/mongodb.png" alt="mongodb">
+              <br>
+              Mongo DB
+            </td>
+            <td>
+              <img src="images/database.svg" alt="sql">
+              <br>
+              SQL
+            </td>
+            <td>
+              <img src="images/nodejs.png" alt="nodejs">
+              <br>
+              NodeJS
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <img src="images/jquery.gif" alt="jquery">
+              <br>
+              jQuery
+            </td>
+            <td>
+              <img src="images/git.png" alt="git">
+              <br>
+              Git
+            </td>
+            <td>
+              <img src="images/cache.png" alt="cache">
+              <br>
+              InterSystems Cache
+            </td>
+          </tr>
+
+        </table>
+      </div>
     </div>
   </section>
 
+
+  <!-- Final Contact page -->
   <section id="contact">
     <div class="contact-div hide">
       <h2>Get In Touch</h2>

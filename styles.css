@@ -3,11 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
+  font-family: 'Merriweather', serif;
   font-size: 2em;
+}
+
+h2,h3 {
+  font-family: 'Merriweather', serif;
 }
 
 body{
@@ -17,11 +22,11 @@ body{
   background-color: #ffffff;
 }
 
-/* Opening Page Styling */
-
-#opening{
-
+hr{
+  width: 5px;
 }
+
+/* Opening Page Styling */
 
 .title{
   display: flex;
@@ -31,6 +36,8 @@ body{
   opacity: 0;
   animation: 1s fadein 0.5s forwards;
   animation-iteration-count: 1;
+  height: 100vh;
+  width: 100vw;
 }
 
 @keyframes fadein {
@@ -98,11 +105,86 @@ a:visited{
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.about-div{
+  text-align: center;
+  padding: 0 15vw;
+  width: 90%;
 }
 
 .me {
   border-radius: 50%;
+  margin-top:5vh;
 }
+
+.bio{
+  padding: 3vh 0 5vh;
+}
+
+.hammock{
+  height: 10vh;
+  width: auto;
+}
+
+iframe{
+  height: 10vh;
+  width: auto;
+}
+
+.experience{
+  padding: 5vh 0;
+}
+
+.epic-div{
+  text-align: left;
+  margin: 2% 0;
+}
+
+.heart{
+  height: 10vh;
+  width: auto;
+  float: left;
+}
+
+.det-diesel{
+  text-align: right;
+  margin: 2% 0;
+}
+
+.gear{
+  float: right;
+  height: 10vh;
+  width: auto;
+}
+
+.experience img{
+  margin: 15px;
+}
+
+.programming{
+  text-align: center;
+}
+
+table{
+  margin: auto;
+  border: 5px solid red;
+}
+tbody{
+  border-color: blue;
+  margin: 0 10px;
+}
+td{
+  border: 5px solid red;
+}
+
+td img{
+  height: 5vh;
+  width: auto;
+}
+
 
 
 /* Transition Stylings */
@@ -113,7 +195,5 @@ a:visited{
 }
 
 .show {
-  height: 100vh;
-  width: 100vw;
   transition: height 1s ease-in-out;
 }
