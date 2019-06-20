@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 
 //changes pages when the down arrow is clicked
 $('.down-arrow').click(function(){
@@ -8,6 +10,18 @@ $('.down-arrow').click(function(){
   $('.contact-div').removeClass('hide');
 });
 
+$('nav a').click(function(e){
+  if (this.innerHTML === 'Home'){
+    $('.title').toggleClass('hide show');
+    $('.down-arrow').toggleClass('hide');
+    $('.about-div').toggleClass('hide show');
+    $('nav').css('display','none');
+    $('.contact-div').addClass('hide');
+  }
+});
+
+
+//Navigation bar dissapears when you scroll down and reappears when you scroll up
 var didScroll;
 var delta = 5;
 var navbarHeight = $('nav').outerHeight();
@@ -37,6 +51,3 @@ function hasScrolled() {
   }
   lastScrollTop = st;
 }
-
-//Once you go past home page, it should open up all of the pages. Contact page
-//should fade in when you reach the bottom of the about page.

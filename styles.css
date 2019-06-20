@@ -1,3 +1,5 @@
+/* Document wide styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,15 +19,12 @@ h2,h3 {
 }
 
 body{
-  background-image: url('images/marble.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #ffffff;
+  background-image: linear-gradient(#f9f7f7, #dbe2ef);
 }
 
 hr{
   border-top: 2px dotted red;
-  margin: 3vh 0;
+  margin: 0 0 3vh;
 }
 
 table{
@@ -39,6 +38,12 @@ a {
 
 a:visited{
   color: #f9f9f9;
+}
+
+.exp-img{
+  height: 10vh;
+  width: auto;
+  margin: 0 1vw;
 }
 
 /* Opening Page Styling */
@@ -93,6 +98,8 @@ a:visited{
     opacity: 1;
   }
 }
+
+
 /* Navbar Styling */
 nav {
   padding: 10px 5px;
@@ -101,11 +108,15 @@ nav {
   display: none;
   background-color: #606060;
   justify-content: flex-end;
+  align-content: center;
   top: 0;
   height: 7vh;
   width: 100%;
   position: fixed;
   transition: top 0.2s ease-in-out;
+  opacity: 0;
+  animation: 1s fadein 2s forwards;
+  border-bottom: 2px solid #ffde7d;
 }
 
 .nav-up{
@@ -124,6 +135,7 @@ nav {
   text-align: center;
   height: 100%;
   width: 100%;
+  background-image: linear-gradient(#dbe2ef , #f9f7f7);
 }
 
 .about-div{
@@ -141,22 +153,15 @@ nav {
   margin-top:5vh;
 }
 
-
-
-/* Experience Sub-Section */
-
-.exp-img{
-  height: 10vh;
-  width: auto;
-  margin: 0 1vw;
+/* Experience Sub-section */
+.exp-table thead tr th{
+  border-bottom: 5px solid #4c4c4c;
 }
+
+
 
 
 /* Programming Sub-Section */
-iframe{
-  height: 10vh;
-  width: auto;
-}
 
 .programming{
   background-color: #d14747;
@@ -199,6 +204,7 @@ td img{
   overflow: hidden;
   transition: height 1s ease-in-out;
   padding: 0;
+  background-image: linear-gradient(#f9f7f7, #dbe2ef);
 }
 
 .show {
