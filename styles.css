@@ -4,6 +4,7 @@
   box-sizing: border-box;
   border: none;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -23,7 +24,21 @@ body{
 }
 
 hr{
-  width: 5px;
+  border-top: 2px dotted red;
+  margin: 3vh 0;
+}
+
+table{
+  margin: 5vh auto;
+  border: 5px solid #4c4c4c;
+}
+
+a {
+  padding: 0 3px;
+}
+
+a:visited{
+  color: #f9f9f9;
 }
 
 /* Opening Page Styling */
@@ -63,6 +78,7 @@ hr{
   border-radius: 50%;
   background-color: #d1d1d1;
 }
+
 .title .hide{
   display: none;
 }
@@ -85,14 +101,15 @@ nav {
   display: none;
   background-color: #606060;
   justify-content: flex-end;
+  top: 0;
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
 }
 
-a {
-  padding: 0 3px;
-}
-
-a:visited{
-  color: #f9f9f9;
+.nav-up{
+  top: -7vh;
 }
 
 .navtitle {
@@ -110,9 +127,13 @@ a:visited{
 }
 
 .about-div{
-  text-align: center;
   padding: 0 15vw;
   width: 90%;
+  padding-top: 7vh;
+}
+
+.sub-section{
+  padding: 5vh 0;
 }
 
 .me {
@@ -120,64 +141,31 @@ a:visited{
   margin-top:5vh;
 }
 
-.bio{
-  padding: 3vh 0 5vh;
-}
 
-.hammock{
+
+/* Experience Sub-Section */
+
+.exp-img{
   height: 10vh;
   width: auto;
+  margin: 0 1vw;
 }
 
+
+/* Programming Sub-Section */
 iframe{
   height: 10vh;
   width: auto;
 }
 
-.experience{
-  padding: 5vh 0;
-}
-
-.epic-div{
-  text-align: left;
-  margin: 2% 0;
-}
-
-.heart{
-  height: 10vh;
-  width: auto;
-  float: left;
-}
-
-.det-diesel{
-  text-align: right;
-  margin: 2% 0;
-}
-
-.gear{
-  float: right;
-  height: 10vh;
-  width: auto;
-}
-
-.experience img{
-  margin: 15px;
-}
-
 .programming{
-  text-align: center;
+  background-color: #d14747;
 }
 
-table{
-  margin: auto;
-  border: 5px solid red;
-}
-tbody{
-  border-color: blue;
-  margin: 0 10px;
-}
-td{
-  border: 5px solid red;
+.programming tr td{
+  width: 15vw;
+  height: 15vh;
+  color: white;
 }
 
 td img{
@@ -185,6 +173,24 @@ td img{
   width: auto;
 }
 
+/* Contact Section */
+#contact{
+  color: white;
+  background-color: #636363;
+}
+
+.contact-div{
+  height: 40vh;
+}
+
+.contact-div hr{
+  width: 100%;
+  border-top: 5px solid black;
+}
+
+.cont-options img{
+  margin: 3vh 4vw;
+}
 
 
 /* Transition Stylings */
@@ -192,6 +198,7 @@ td img{
   height: 0;
   overflow: hidden;
   transition: height 1s ease-in-out;
+  padding: 0;
 }
 
 .show {

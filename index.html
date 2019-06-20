@@ -36,9 +36,9 @@
       <img src="images/Ryan.jpeg" alt="Personal Photo" class="me">
 
 
-      <div class="bio">
+      <div class="sub-section">
         <h2>Bio</h2>
-        <p class="profile-descrip">Hi there! I'm a full-stack web developer with a degree in Material Sciences Engineering from the University of Michigan. I aim to combine my strong analytical
+        <p>Hi there! I'm a full-stack web developer with a degree in Material Sciences Engineering from the University of Michigan. I aim to combine my strong analytical
           background during my training as an engineer with my technical software expertise to deliver clean and effective software solutions.
         </p>
         <br>
@@ -47,35 +47,58 @@
 
       <hr>
 
-      <div class="interests">
-        <img src="images/hammock.svg" alt="hammock" class="hammock">
+      <div class="sub-section">
+        <img src="images/hammock.svg" alt="hammock" class="exp-img">
         <h2>Some of My Interests...</h2>
         <p>Kendrick Lamar | Guitar | Hiking | Environmentalism | Michael Pollan | Lacrosse | Soccer | Tim Ferris | Meditation | Flight of the Conchords | Popping Bubble Wrap</p>
       </div>
 
       <hr>
 
-      <div class="experience">
+      <div class="sub-section">
         <h2>Experience</h2>
-        <div class="epic-div">
-          <img src="images/heartbeat.svg" alt="heart" class="heart">
-          <h3>Epic Systems</h3>
-          <p=class="skills-descrip">I've managed various teams across a suite of projects. From software implementations to brand new axle assembly lines!</p>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h3>Epic Systems</h3>
+              </th>
+            </tr>
+          </thead>
+          <tr>
+            <td>
+              <p=class="skills-descrip">As a Technical Services Engineer I worked with teams of analysts at various healthcare organizations to manage their software.
+                I worked on everything from implementations at the hospitals to writing MUMPS/SQL queries to improve system and hospital performance!</p>
+            </td>
+            <td><img src="images/heartbeat.svg" alt="heart" class="exp-img"></td>
+          </tr>
+        </table>
 
-        <div class="det-diesel">
-          <img src="images/assembly.svg" alt="assembly" class="gear">
-          <h3>Detroit Diesel</h3>
-          <p class="eng-descrip">I graduated in April 2017 with a Material Sciences Engineering degree from the University of Michigan. I have extensive experience with manufacturing and failure analysis while working
-            at Detroit Diesel in 2016. I continuosly strive to learn and improve through hands on experience and analytical thinking. </p>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h3>Detroit Diesel</h3>
+              </th>
+            </tr>
+          </thead>
+          <tr>
+            <td><img src="images/assembly.svg" alt="assembly" class="exp-img"></td>
+            <td>
+              <p class="eng-descrip">During my time in the Materials Lab at Detroit Diesel, I investigated a wide array of issues on the assembly floor. I investigated the root cause of
+                engine failure, reviewed welding specifications, and worked with suppliers on production issues. I consistently collaborated with a cross disciplinary team of mechanical and material engineers to
+                improve a multitude of manufacturing processes.</p>
+            </td>
+          </tr>
+        </table>
       </div>
 
-      <div class="programming">
+      <hr>
+
+      <div class="sub-section">
         <iframe src="https://giphy.com/embed/1ynCEtlgMPAeNAqdnu" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        <p><a href="https://giphy.com/stickers/ciscoengemojis-security-1ynCEtlgMPAeNAqdnu">via GIPHY</a></p>
         <h2>Programming Knowledge.</h2>
-        <table>
+        <table class = "programming">
           <tr>
             <td>
               <img src="images/javascript.png" alt="javascript">
@@ -138,8 +161,14 @@
   <!-- Final Contact page -->
   <section id="contact">
     <div class="contact-div hide">
-      <h2>Get In Touch</h2>
+      <hr>
+      <h1>Get In Touch</12>
       <h3>Questions or comments? I'm your guy!</h3>
+      <div class="cont-options">
+        <a href="https://github.com/rchuff"><img src="images/github.svg" alt="github" class="exp-img"></a>
+        <a href="mailto:rchuff@umich.edu"><img src="images/gmail.svg" alt="gmail" class="exp-img"></a>
+        <a href="https://www.linkedin.com/in/rchuffnagle/"><img src="images/linkedin.svg" alt="linkedin" class="exp-img"></a>
+      </div>
       <p>Please reach out for development related purposes or just to say hi! I always love to chat!</p>
     </div>
 
