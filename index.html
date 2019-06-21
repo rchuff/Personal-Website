@@ -16,7 +16,7 @@
   <section id="opening">
     <div class="title show">
       <h1>Ryan Huffnagle</h1>
-      <h2><i>Engineer</i> | <i>Developer</i> | <i>Creator</i></h2>
+      <h2><i>Engineer / Developer</i></h2>
       <img src="images/down-arrow.svg" class="down-arrow">
     </div>
   </section>
@@ -31,26 +31,28 @@
 
   <!-- Entire Bio section. Contains my description, interests, experience, and programming knowledge -->
   <section id="about">
-    <div class="about-div hide">
-
-      <img src="images/Ryan.jpeg" alt="Personal Photo" class="me">
-
-
-      <div class="sub-section">
-        <h2>Bio</h2>
-        <p>Hi there! I'm a full-stack web developer with a degree in Material Sciences Engineering from the University of Michigan. I aim to combine my strong analytical
-          background during my training as an engineer with my technical software expertise to deliver clean and effective software solutions.
-        </p>
-        <br>
-        <p>Collaboration is the key to success. I pride myself on working extremly effectively on both small and large teams, both in software development and on the production floor.</p>
+    <!-- About div used for transitioning only -->
+    <div class="hide">
+      <div class="home-background">
+        <img src="images/michigan.webp" alt="nature-background">
+        <div class="sub-section">
+          <img src="images/Ryan.jpeg" alt="Personal Photo" class="me">
+          <div class="bio-desc">
+            <h2>Bio</h2>
+            <p>Hi there! I'm a full-stack web developer with a degree in Material Sciences Engineering from the University of Michigan. I aim to combine my strong analytical
+              background during my training as an engineer with my technical software expertise to deliver clean and effective software solutions.
+            </p>
+            <p>Collaboration is the key to success. I pride myself on working extremly effectively on both small and large teams, both in software development and on the production floor.</p>
+          </div>
+        </div>
       </div>
 
-      <hr>
-
       <div class="sub-section">
-        <img src="images/hammock.svg" alt="hammock" class="exp-img">
-        <h2>Some of My Interests...</h2>
-        <p>Kendrick Lamar | Guitar | Hiking | Environmentalism | Michael Pollan | Lacrosse | Soccer | Tim Ferriss | Meditation | Flight of the Conchords | Popping Bubble Wrap</p>
+        <div>
+          <img src="images/hammock.svg" alt="hammock" class="exp-img">
+          <h2>Some of My Interests...</h2>
+          <p>Kendrick Lamar | Guitar | Hiking | Environmentalism | Michael Pollan | Lacrosse | Tim Ferriss | Soccer | Meditation | Flight of the Conchords | Popping Bubble Wrap</p>
+        </div>
       </div>
 
       <hr>
@@ -61,7 +63,7 @@
           <thead>
             <tr>
               <th colspan="2">
-                <h3>Epic Systems</h3>
+                <h3><a href="https://www.epic.com/" target="_blank">Epic Systems</a></h3>
               </th>
             </tr>
           </thead>
@@ -78,12 +80,12 @@
           <thead>
             <tr>
               <th colspan="2">
-                <h3>Detroit Diesel</h3>
+                <h3><a href="https://demanddetroit.com/" target="_blank">Detroit Diesel</a></h3>
               </th>
             </tr>
           </thead>
           <tr>
-            <td><img src="images/assembly.svg" alt="assembly" class="exp-img gear"></td>
+            <td><img src="images/manufacture.svg" alt="assembly" class="exp-img gear"></td>
             <td>
               <p class="eng-descrip">During my time in the Materials Lab at Detroit Diesel, I investigated a wide array of issues on the assembly floor. I investigated the root cause of
                 engine failure, reviewed welding specifications, and worked with suppliers on production issues. I consistently collaborated with a cross disciplinary team of mechanical and material engineers to
@@ -96,63 +98,66 @@
       <hr>
 
       <div class="sub-section">
-        <iframe src="https://giphy.com/embed/1ynCEtlgMPAeNAqdnu" width="480" height="480" frameBorder="0" class="giphy-embed exp-img" allowFullScreen></iframe>
-        <h2>Programming Knowledge.</h2>
-        <table class = "programming">
-          <tr>
-            <td>
-              <img src="images/javascript.png" alt="javascript">
-              <br>
-              Javascript
-            </td>
-            <td>
-              <img src="images/HTML.png" alt="html">
-              <br>
-              HTML
-            </td>
-            <td>
-              <img src="images/css.png" alt="css">
-              <br>
-              CSS
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="images/mongodb.png" alt="mongodb">
-              <br>
-              Mongo DB
-            </td>
-            <td>
-              <img src="images/database.svg" alt="sql">
-              <br>
-              SQL
-            </td>
-            <td>
-              <img src="images/nodejs.png" alt="nodejs">
-              <br>
-              NodeJS
-            </td>
+        <div>
+          <iframe src="https://giphy.com/embed/1ynCEtlgMPAeNAqdnu" width="480" height="480" frameBorder="0" class="giphy-embed exp-img" allowFullScreen></iframe>
+          <h2>Programming Knowledge.</h2>
+          <table class = "programming">
+            <tr>
+              <td>
+                <img src="images/javascript.png" alt="javascript">
+                <br>
+                Javascript
+              </td>
+              <td>
+                <img src="images/HTML.png" alt="html">
+                <br>
+                HTML
+              </td>
+              <td>
+                <img src="images/css.png" alt="css">
+                <br>
+                CSS
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/mongodb.png" alt="mongodb">
+                <br>
+                Mongo DB
+              </td>
+              <td>
+                <img src="images/database.svg" alt="sql">
+                <br>
+                SQL
+              </td>
+              <td>
+                <img src="images/nodejs.png" alt="nodejs">
+                <br>
+                NodeJS
+              </td>
 
-          </tr>
-          <tr>
-            <td>
-              <img src="images/jquery.gif" alt="jquery">
-              <br>
-              jQuery
-            </td>
-            <td>
-              <img src="images/git.png" alt="git">
-              <br>
-              Git
-            </td>
-            <td>
-              <img src="images/cache.png" alt="cache">
-              <br>
-              InterSystems Cache
-            </td>
-          </tr>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/jquery.gif" alt="jquery">
+                <br>
+                jQuery
+              </td>
+              <td>
+                <img src="images/git.png" alt="git">
+                <br>
+                Git
+              </td>
+              <td>
+                <img src="images/cache.png" alt="cache">
+                <br>
+                InterSystems Cache
+              </td>
+            </tr>
 
-        </table>
+          </table>
+        </div>
+
       </div>
     </div>
   </section>

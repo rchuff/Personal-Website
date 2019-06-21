@@ -3,19 +3,22 @@
 
 //changes pages when the down arrow is clicked
 $('.down-arrow').click(function(){
-  $('.title').toggleClass('hide show');
+  $('.title').toggleClass('hide');
   $('.down-arrow').toggleClass('hide');
-  $('.about-div').toggleClass('hide show');
+  $('#about > div').toggleClass('hide fade');
   $('nav').css('display','flex');
+  $('.home-background .sub-section').css('display', 'block');
   $('.contact-div').removeClass('hide');
 });
 
 $('nav a').click(function(e){
   if (this.innerHTML === 'Home'){
-    $('.title').toggleClass('hide show');
+
+    $('.title').toggleClass('hide');
     $('.down-arrow').toggleClass('hide');
-    $('.about-div').toggleClass('hide show');
+    $('#about > div').toggleClass('hide fade');
     $('nav').css('display','none');
+    $('.home-background .sub-section').css('display', 'none');
     $('.contact-div').addClass('hide');
   }
 });
