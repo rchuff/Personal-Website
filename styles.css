@@ -291,7 +291,7 @@ td img{
   }
 }
 
-/* Media Query for different widths */
+/* Media Query for different widths and hamburger menu*/
 
 @media only screen and (max-width: 540px){
   .sub-section{
@@ -299,6 +299,7 @@ td img{
   }
 }
 
+/* Activates burger menu and hides individual options */
 @media only screen and (max-width: 768px){
   .burger{
     display: block;
@@ -332,12 +333,13 @@ td img{
 }
 
 
-
+/* Used for sliding across burger menu */
 .nav-active{
   transform: translateX(0%);
   transition: transform 0.5s ease-in;
 }
 
+/* Animation used for anchor tag fade-in for burger menu */
 @keyframes navLinkFade{
   from{
     opacity: 0;
@@ -349,6 +351,7 @@ td img{
   }
 }
 
+/* Turn burger menu into X */
 .toggle .line1{
   transform: rotate(-45deg) translate(-4px,5px);
 }
