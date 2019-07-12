@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -18,6 +19,9 @@ h1 {
 
 
 body{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f7f7), to(#dbe2ef));
+  background-image: -webkit-linear-gradient(#f9f7f7, #dbe2ef);
+  background-image: -o-linear-gradient(#f9f7f7, #dbe2ef);
   background-image: linear-gradient(#f9f7f7, #dbe2ef);
 }
 
@@ -59,15 +63,35 @@ a:visited{
 /* Opening Page Styling */
 
 .title{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
-  animation: 1s fadein 0.5s forwards;
-  animation-iteration-count: 1;
+  -webkit-animation: 1s fadein 0.5s forwards;
+          animation: 1s fadein 0.5s forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
   height: 100vh;
   width: 100vw;
+}
+
+@-webkit-keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
@@ -83,7 +107,8 @@ a:visited{
   position: absolute;
   bottom: 5vh;
   height: 9vh;
-  animation: flash 2s 1.5s infinite;
+  -webkit-animation: flash 2s 1.5s infinite;
+          animation: flash 2s 1.5s infinite;
   padding: 5px;
   opacity: 0;
 }
@@ -96,6 +121,17 @@ a:visited{
 
 .title .hide{
   display: none;
+}
+
+@-webkit-keyframes flash {
+  0%{
+    opacity: 0;
+    height: 5vh;
+  }
+  100%{
+    height: 9vh;
+    opacity: 1;
+  }
 }
 
 @keyframes flash {
@@ -117,15 +153,22 @@ nav {
   color: #f9f9f9;
   display: none;
   background-color: #606060;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   height: 7vh;
   width: 100%;
   position: fixed;
+  -webkit-transition: top 0.2s ease-in-out;
+  -o-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
   opacity: 0;
-  animation: 1s fadein 2s forwards;
+  -webkit-animation: 1s fadein 2s forwards;
+          animation: 1s fadein 2s forwards;
   border-bottom: 2px solid #ffde7d;
   z-index: 1;
 }
@@ -143,6 +186,8 @@ li a{
   width: 28px;
   background-color: white;
   margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -160,20 +205,32 @@ li a{
 
 .nav-links{
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 20%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 
 /* About Section Styling */
 #about{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   height: 100%;
   width: 100%;
+  background-image: -webkit-gradient(linear , left top, left bottom , from(#dbe2ef) , to(#f9f7f7));
+  background-image: -webkit-linear-gradient(#dbe2ef , #f9f7f7);
+  background-image: -o-linear-gradient(#dbe2ef , #f9f7f7);
   background-image: linear-gradient(#dbe2ef , #f9f7f7);
 }
 
@@ -275,15 +332,26 @@ td img{
 .hide {
   height: 0;
   overflow: hidden;
+  -webkit-transition: height 1s ease-in-out;
+  -o-transition: height 1s ease-in-out;
   transition: height 1s ease-in-out;
   padding: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f7f7), to(#dbe2ef));
+  background-image: -webkit-linear-gradient(#f9f7f7, #dbe2ef);
+  background-image: -o-linear-gradient(#f9f7f7, #dbe2ef);
   background-image: linear-gradient(#f9f7f7, #dbe2ef);
 }
 
 
 .fade{
   opacity: 0;
-  animation: slidefade 2s ease-in 2s forwards;
+  -webkit-animation: slidefade 2s ease-in 2s forwards;
+          animation: slidefade 2s ease-in 2s forwards;
+}
+@-webkit-keyframes slidefade {
+  100%{
+    opacity: 1;
+  }
 }
 @keyframes slidefade {
   100%{
@@ -312,13 +380,24 @@ td img{
     right: 0px;
     top: 7vh;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     background-color: #606060;
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
 
   }
   .nav-links li{
@@ -335,29 +414,53 @@ td img{
 
 /* Used for sliding across burger menu */
 .nav-active{
-  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  -o-transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 
 /* Animation used for anchor tag fade-in for burger menu */
-@keyframes navLinkFade{
+@-webkit-keyframes navLinkFade{
   from{
     opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   to{
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 /* Turn burger menu into X */
 .toggle .line1{
-  transform: rotate(-45deg) translate(-4px,5px);
+  -webkit-transform: rotate(-45deg) translate(-4px,5px);
+      -ms-transform: rotate(-45deg) translate(-4px,5px);
+          transform: rotate(-45deg) translate(-4px,5px);
 }
 .toggle .line2{
   opacity: 0;
 }
 .toggle .line3{
-  transform: rotate(45deg) translate(-10px,-10px);
+  -webkit-transform: rotate(45deg) translate(-10px,-10px);
+      -ms-transform: rotate(45deg) translate(-10px,-10px);
+          transform: rotate(45deg) translate(-10px,-10px);
 }
