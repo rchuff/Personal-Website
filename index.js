@@ -9,8 +9,10 @@ $('.down-arrow').click(function() {
   $('nav').css('display', 'flex');
   $('.home-background .sub-section').css('display', 'block');
   $('.contact-div').removeClass('hide');
+  $('.project-div').toggleClass('hide');
 });
 
+//If the home button on the navbar is clicked hide main site.
 $('nav a').click(function(e) {
   if (this.innerHTML === 'Home') {
 
@@ -20,6 +22,7 @@ $('nav a').click(function(e) {
     $('nav').css('display', 'none');
     $('.home-background .sub-section').css('display', 'none');
     $('.contact-div').addClass('hide');
+    $('.project-div').toggleClass('hide');
   }
 });
 

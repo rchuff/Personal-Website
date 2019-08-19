@@ -311,6 +311,49 @@ td img{
   width: auto;
 }
 
+/* Projects Section */
+.project-div{
+  padding: 5vh 5vw;
+}
+
+.project-div h2{
+  text-decoration: underline;
+}
+
+.project-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project{
+  width: 350px;
+  height: 350px;
+  border: 5px solid #BFBFBF;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.project > img{
+  max-width: 75%;
+  max-height: 75%;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  margin: 5px auto;
+}
+
+.proj-link button{
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background: #636363;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
 /* Contact Section */
 #contact{
   color: white;
