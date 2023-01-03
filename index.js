@@ -1,17 +1,5 @@
 //jshint esversion: 6
 
-
-//changes pages when the down arrow is clicked
-$('.down-arrow').click(function() {
-  $('.title').toggleClass('hide');
-  $('.down-arrow').toggleClass('hide');
-  $('#about > div').toggleClass('hide fade');
-  $('nav').css('display', 'flex');
-  $('.home-background .sub-section').css('display', 'block');
-  $('.contact-div').removeClass('hide');
-  $('.project-div').toggleClass('hide');
-});
-
 //If the home button on the navbar is clicked hide main site.
 $('nav a').click(function(e) {
   if (this.innerHTML === 'Home') {

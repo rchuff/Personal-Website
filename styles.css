@@ -60,98 +60,13 @@ a:visited{
   margin: 0 1vw;
 }
 
-/* Opening Page Styling */
-
-.title{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-  -webkit-animation: 1s fadein 0.5s forwards;
-          animation: 1s fadein 0.5s forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  height: 100vh;
-  width: 100vw;
-}
-
-@-webkit-keyframes fadein {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-.down-arrow{
-  position: absolute;
-  bottom: 5vh;
-  height: 9vh;
-  -webkit-animation: flash 2s 1.5s infinite;
-          animation: flash 2s 1.5s infinite;
-  padding: 5px;
-  opacity: 0;
-}
-
-.down-arrow:hover{
-  padding: 5px;
-  border-radius: 50%;
-  background-color: #d1d1d1;
-}
-
-.title .hide{
-  display: none;
-}
-
-@-webkit-keyframes flash {
-  0%{
-    opacity: 0;
-    height: 5vh;
-  }
-  100%{
-    height: 9vh;
-    opacity: 1;
-  }
-}
-
-@keyframes flash {
-  0%{
-    opacity: 0;
-    height: 5vh;
-  }
-  100%{
-    height: 9vh;
-    opacity: 1;
-  }
-}
-
 
 /* Navbar Styling */
 nav {
   padding: 10px 5px;
   font-size: 1em;
   color: #f9f9f9;
-  display: none;
+  display: flex;
   background-color: #606060;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -166,7 +81,6 @@ nav {
   -webkit-transition: top 0.2s ease-in-out;
   -o-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
-  opacity: 0;
   -webkit-animation: 1s fadein 2s forwards;
           animation: 1s fadein 2s forwards;
   border-bottom: 2px solid #ffde7d;
@@ -256,7 +170,7 @@ li a{
 }
 
 .home-background > .sub-section {
-  display: none;
+  display: block;
   color: white;
 }
 .bio-desc{
@@ -291,6 +205,19 @@ li a{
 
 .exp-table thead tr th{
   border-bottom: 5px double #e2c275;
+}
+
+/*Education Sub-section */
+.education{
+  text-align: center;
+}
+
+thead{
+  border-bottom: 5px double #e2c275;
+}
+
+table{
+  width: 90%;
 }
 
 
