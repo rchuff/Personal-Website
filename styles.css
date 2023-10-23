@@ -1,0 +1,436 @@
+/* Document wide styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+h1,h2,h3{
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+
+body{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f7f7), to(#dbe2ef));
+  background-image: -webkit-linear-gradient(#f9f7f7, #dbe2ef);
+  background-image: -o-linear-gradient(#f9f7f7, #dbe2ef);
+  background-image: linear-gradient(#f9f7f7, #dbe2ef);
+}
+
+hr{
+  border-style: dotted none none;
+  border-width: 5px 0;
+  width: 15%;
+  border-top-width: 10px;
+  border-color: #bfbfbf;
+  margin: auto;
+}
+
+table{
+  margin: 5vh auto;
+  border: 5px solid #4c4c4c;
+}
+
+a {
+  color: white;
+  padding: 0 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+a:visited{
+  color: #f9f9f9;
+}
+
+.exp-img{
+  height: 10vh;
+  width: auto;
+  margin: 0 1vw;
+}
+
+
+/* Navbar Styling */
+nav {
+  padding: 10px 5px;
+  font-size: 1em;
+  color: #f9f9f9;
+  display: flex;
+  background-color: #606060;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: top 0.2s ease-in-out;
+  -o-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  -webkit-animation: 1s fadein 2s forwards;
+          animation: 1s fadein 2s forwards;
+  border-bottom: 2px solid #ffde7d;
+  z-index: 1;
+}
+
+li{
+  display: inline;
+}
+
+li a{
+  display: block;
+}
+
+.burger div{
+  height: 5px;
+  width: 28px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.burger{
+  display: none;
+}
+
+.nav-up{
+  top: -7vh;
+}
+
+.navtitle {
+  margin-right: auto;
+}
+
+.nav-links{
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+
+/* About Section Styling */
+#about{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear , left top, left bottom , from(#dbe2ef) , to(#f9f7f7));
+  background-image: -webkit-linear-gradient(#dbe2ef , #f9f7f7);
+  background-image: -o-linear-gradient(#dbe2ef , #f9f7f7);
+  background-image: linear-gradient(#dbe2ef , #f9f7f7);
+}
+
+.sub-section{
+  padding: 5vh 20vw;
+}
+
+.sub-section h2 {
+  text-decoration: underline;
+}
+
+.home-background{
+  background-image: url("images/michigan-b.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-background > img{
+  width: 100%;
+  height: 100vh;
+  border-bottom: 2px solid #ffde7d;
+}
+
+.home-background > .sub-section {
+  display: block;
+  color: white;
+}
+.bio-desc{
+  margin-top: 2vh;
+  background-color: #6b778d;
+  border: 5px double #e2c275;
+  border-radius: 2%;
+}
+
+.bio-desc p{
+  padding: 10px;
+}
+
+.me {
+  border-radius: 50%;
+  margin-top:5vh;
+}
+
+.sub-section > div{
+  border-right: 2px solid #ffde7d;
+  border-left: 2px solid #ffde7d;
+}
+
+
+
+/* Experience Sub-section */
+.exp-table{
+  background-color: #6b778d;
+  border: 5px double #e2c275;
+  color: white;
+}
+
+.exp-table thead tr th{
+  border-bottom: 5px double #e2c275;
+}
+
+/*Education Sub-section */
+.education{
+  text-align: center;
+}
+
+thead{
+  border-bottom: 5px double #e2c275;
+}
+
+table{
+  width: 90%;
+}
+
+
+/* Programming Sub-Section */
+
+.programming{
+  background-color: #d14747;
+}
+
+.programming tr td{
+  width: 15vw;
+  height: 15vh;
+  color: white;
+}
+
+td img{
+  height: 5vh;
+  width: auto;
+}
+
+/* Projects Section */
+.project-div{
+  padding: 5vh 5vw;
+}
+
+.project-div h2{
+  text-decoration: underline;
+}
+
+.project-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project{
+  width: 350px;
+  height: 350px;
+  border: 5px solid #BFBFBF;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.project > img{
+  max-width: 75%;
+  max-height: 75%;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  margin: 5px auto;
+}
+
+.proj-link button{
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background: #636363;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Contact Section */
+#contact{
+  color: white;
+  background-color: #636363;
+}
+
+
+.contact-div hr{
+  width: 100%;
+  border-top: 5px solid black;
+}
+
+.cont-options img{
+  margin: 3vh 4vw;
+}
+
+
+/* Transition Stylings */
+.hide {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 1s ease-in-out;
+  -o-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
+  padding: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f7f7), to(#dbe2ef));
+  background-image: -webkit-linear-gradient(#f9f7f7, #dbe2ef);
+  background-image: -o-linear-gradient(#f9f7f7, #dbe2ef);
+  background-image: linear-gradient(#f9f7f7, #dbe2ef);
+}
+
+
+.fade{
+  opacity: 0;
+  -webkit-animation: slidefade 2s ease-in 2s forwards;
+          animation: slidefade 2s ease-in 2s forwards;
+}
+@-webkit-keyframes slidefade {
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes slidefade {
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Media Query for different widths and hamburger menu*/
+
+@media only screen and (max-width: 540px){
+  .sub-section{
+    padding: 5vh 7vw;
+  }
+}
+
+/* Activates burger menu and hides individual options */
+@media only screen and (max-width: 768px){
+  .burger{
+    display: block;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    top: 7vh;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-color: #606060;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+
+  }
+  .nav-links li{
+    opacity: 0;
+    margin: 5px;
+    font-size: 1.75em;
+    width: 100%;
+    display: block;
+    background-color: #787878;
+    border-radius: 15px;
+  }
+}
+
+
+/* Used for sliding across burger menu */
+.nav-active{
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  -o-transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+/* Animation used for anchor tag fade-in for burger menu */
+@-webkit-keyframes navLinkFade{
+  from{
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+/* Turn burger menu into X */
+.toggle .line1{
+  -webkit-transform: rotate(-45deg) translate(-4px,5px);
+      -ms-transform: rotate(-45deg) translate(-4px,5px);
+          transform: rotate(-45deg) translate(-4px,5px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  -webkit-transform: rotate(45deg) translate(-10px,-10px);
+      -ms-transform: rotate(45deg) translate(-10px,-10px);
+          transform: rotate(45deg) translate(-10px,-10px);
+}
